@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 10vmin;
+  height: 7vmin;
   pointer-events: none;
 }
 
@@ -22,6 +22,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-bottom: 40px;
+  padding: 20px;
 }
 
 .App-link {
