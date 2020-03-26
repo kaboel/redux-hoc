@@ -110,9 +110,9 @@ const validate = val => {
     errors.age = 'Sorry, you must be at least 18 years old'
   }
   return errors;
- };
+};
 
- const renderField = ({ input, label, type, meta: { touched, error, warning } }) => (
+const renderField = ({ input, label, type, meta: { touched, error, warning } }) => (
   <div>
     <div className="control">
       <label className="field">{label}</label>
@@ -120,7 +120,12 @@ const validate = val => {
       {touched && ((error && <span>{error}</span>) || (warning && <span>{warning}</span>))}
     </div>
   </div>
- )
+)
+
+SignInForm = reduxForm({
+  form: 'signIn',
+  validate,
+})(SignInForm);
 
 function App() {
   return (
