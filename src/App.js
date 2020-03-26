@@ -1,6 +1,6 @@
 import React from 'react';
 import { reduxForm, Field } from 'redux-form';
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 
 let SignInForm = props => {
@@ -110,7 +110,7 @@ const validate = val => {
     errors.age = 'Sorry, you must be at least 18 years old'
   }
   return errors;
-};
+ };
 
 const renderField = ({ input, label, type, meta: { touched, error, warning } }) => (
   <div>
@@ -127,12 +127,24 @@ SignInForm = reduxForm({
   validate,
 })(SignInForm);
 
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
+class App extends React.Component {
+  handleSignIn = values => {
+    console.log(values);
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          Contact Form
+        </header>
+        <div className="container">
+          <SignInForm onSubmit={this.handleSignIn}/>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
