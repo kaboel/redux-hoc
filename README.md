@@ -1,3 +1,8 @@
+LAPORAN : ([[Laporan] Redux dan HOC - M. Faiq Allam - 1741720209](https://github.com/kaboel/redux-hoc/blob/master/%5BLaporan%5D%20Redux%20dan%20HOC%20-%20M.%20Faiq%20Allam%20-%201741720209.pdf))
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
